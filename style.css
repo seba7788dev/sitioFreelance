@@ -1,0 +1,148 @@
+/* Uso variables */
+:root{
+    --oscuro:#212121;
+    --primario:#ffc107;
+    --secundario:#0097a7;
+
+    --anchoPantalla:120rem;
+}
+
+html {
+    
+    min-height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+/* font-family: 'Krub', sans-serif; */
+
+
+body{
+    font-family: 'Krub', sans-serif; 
+    min-height: 100%;
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    font-size: 1.6rem;
+}
+h1,h2,h3{
+    margin: 0;
+}
+h2,h3{
+text-align: center;
+}
+
+h3{
+    color: var(--secundario);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.site-header nav{
+    max-width: var(--anchoPantalla);
+    margin: 0 auto;
+    padding: 2rem 0;
+
+
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+
+}
+@media (min-width: 768px){
+    .site-header nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.site-header{
+    background-color: white;
+}
+
+
+.site-header nav a{
+    color: var(--oscuro);
+    font-size: 2.2rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.site-header nav a:last-of-type{
+    margin-bottom:0 ;
+}
+@media (min-width: 768px){
+    .site-header nav a{
+        margin-bottom: 0;
+    }
+}
+
+/* Hero */
+.hero{
+    height: 45rem;
+    background-image: url(img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::after{
+    content: "";
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contenedor-hero{
+    color: white;  
+    /* Para que el contenedor-hero quede "arriba" del after */  
+    position: relative;
+    z-index: 1;
+    /* ***************************** */
+    text-align: center;
+}
+
+.contenedor-hero i{
+    font-size: 5rem;
+    color: var(--primario);
+
+}
+
+.boton{
+ background-color: var(--secundario);
+ padding: 1rem 5rem;
+ display: inline-block;
+ margin-top: 1rem;
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: 700;
+ font-size: 2.2rem;
+ border-radius: 1.2rem;
+}
+
+.contenedor{
+    max-width: var(--anchoPantalla);
+    margin:0 auto ;
+    background-color: white;
+    padding: 3rem;
+    border-radius: 1.2rem;
+
+    /* Sombreado del div desde cssmatic.com */
+    -webkit-box-shadow: 6px 11px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 11px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 11px 8px 0px rgba(0,0,0,0.75);
+    /* ******** */
+
+}
+
+.servicios{
+    margin: 3rem auto;
+}
