@@ -41,13 +41,14 @@
 
     <!-- Main -->
 
-    <main class="servicios contenedor">
+    <div class="contenedor">
+    <main class="servicios">
 
         <h2>Nuestros Servicios</h2>
         <div class="contenedor-servicios">
             <div class="servicio">
                 <h3 class="iconos">Diseño Web</h3>
-                <div class="iconos">
+                <div class="icono">
                     <i class="fa-solid fa-pen-fancy"></i>
                 </div><!-- Cierre iconos -->
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloribus repellendus dolor distinctio tenetur, mollitia unde voluptates beatae voluptas rem non excepturi quo asperiores dicta labore quisquam modi minus quod veritatis et hic animi? Eos velit, voluptates optio, at ducimus laudantium nihil, autem molestiae quod ullam sint quos facere amet?</p>
@@ -55,7 +56,7 @@
 
             <div class="servicio">
                 <h3 class="iconos">Aplicaciones Moviles </h3>
-                <div class="iconos">
+                <div class="icono">
                     <i class="fa-brands fa-android"></i>
 
                     <i class="fa-brands fa-apple"></i>
@@ -66,7 +67,7 @@
 
             <div class="servicio">
                 <h3 class="iconos">Social Media</h3>
-                <div class="iconos">
+                <div class="icono">
                     <i class="fa-brands fa-facebook"></i>
 
                     <i class="fa-brands fa-twitter"></i>
@@ -77,6 +78,41 @@
 
         </div><!-- Cierre contenedor-servicio -->
     </main>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+
+        <form action="#">
+            <legend class="leyenda">Contactanos llenando todos los campos</legend>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label>Nombre: </label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+                </div>
+                <div class="campo">
+                    <label>Telefono: </label>
+                    <input type="tel" name="telefono" placeholder="Ingresa tu telefono">
+                </div>
+                <div class="campo w-100">
+                    <label>Correo: </label>
+                    <input type="email" name="email" placeholder="Ingresa tu e-mail">
+                </div>
+                <div class="campo w-100">
+                    <label>Mensaje: </label>
+                    <textarea>
+
+                    </textarea>
+                </div>
+            </div><!-- Cierre de contenedor-campos -->
+            <div class="enviar">
+                <input type="submit" class="boton" value="Enviar">
+            </div>
+
+
+
+        </form>
+    </section>
+</div>
 </body>
 
 
